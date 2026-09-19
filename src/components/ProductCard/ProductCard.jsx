@@ -1,0 +1,3 @@
+import './ProductCard.css';
+import { useCart } from '../../context/CartContext';
+export default function ProductCard({name,price,img,badge}){const { addItem }=useCart();return <article className="product-card"><div className="product-image"><img src={img} alt={name}/><span>{badge||'طازج'}</span><small>خصم 10%</small></div><div className="product-info"><i>متوفر الآن</i><h3>{name}</h3><p>دجاج طازج مبرد بعناية، جودة عالية ومذاق رائع لعائلتك.</p><div><button type="button" onClick={()=>addItem({id:`${name}-${price}`,name,price,img})}>أضف للسلة 🛒</button><b>{price} <small>₪</small></b></div></div></article>}

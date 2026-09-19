@@ -1,0 +1,194 @@
+/*
+  Central responsive settings
+  ---------------------------
+  Mobile:  0–767px
+  Tablet:  768–1023px
+  Desktop: 1024px and above
+
+  Change responsive layout rules in this file. Component CSS keeps only
+  its desktop appearance, so these values are easy to find and maintain.
+*/
+
+/* Tablet navigation: this is the only breakpoint that changes the menu. */
+@media (max-width: 1023px) {
+  nav { height: 58px; padding: 0 20px; gap: 14px; }
+  .hamb { display: grid; place-items: center; order: 3; width: 38px; height: 38px; background: transparent; color: #fff; font-size: 28px; line-height: 1; }
+  .navlinks { display: none; position: absolute; z-index: 22; top: 100%; right: 12px; left: 12px; max-width: 620px; margin: auto; padding: 12px; background: #004e2c; border: 1px solid #33725a; border-radius: 0 0 12px 12px; box-shadow: 0 14px 28px #002b1a88; flex-direction: column; align-items: stretch; gap: 2px; }
+  .navlinks.show { display: flex; }
+  .navlinks a { padding: 13px 16px; border-radius: 7px; font-size: 13px; }
+  .navlinks a:hover { background: #0b653e; }
+  .nav-backdrop { display: block; position: fixed; inset: 78px 0 0; z-index: 19; background: #001d1166; border: 0; }
+  .tools { margin-right: auto; }
+  .search { width: 42px; padding: 0; text-align: center; font-size: 0; }
+  .search:first-letter { font-size: 21px; }
+  .cart span { display: none; }
+}
+
+/* Tablet layouts: 768px–1023px. */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .section { padding-inline: clamp(20px, 4vw, 40px); }
+
+  /* Product grid: change this 3 to adjust tablet product columns. */
+  .catalog__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+  .about-values__grid, .production__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .certificates__grid, .certificate-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-content { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+  .footer-content .brand { grid-column: span 2; }
+  .offer-grid { grid-template-columns: 1fr; }
+  .offer-grid aside { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .small-ad { margin-top: 0; }
+  .bundle { grid-template-columns: minmax(190px, 35%) 1fr; gap: 16px; }
+  .bundle-img img { height: 100%; }
+  .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .branch-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .catalog-quality__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .quality-hero__inner { flex-direction: column; gap: 28px; }
+  .quality-hero__content { max-width: 100%; text-align: center; }
+  .quality-hero__badges { justify-content: center; }
+  .quality-intro { grid-template-columns: 1fr; }
+  .quality-intro > img { height: 220px; }
+  .procedure-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .detail-grid { grid-template-columns: 1fr 1fr; }
+  .commitment-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .contact-request { grid-template-columns: 260px minmax(0, 1fr); }
+  .contact-hero { padding-inline: clamp(20px, 4vw, 40px); }
+  .branches-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Mobile layouts: 0px–767px. */
+@media (max-width: 767px) {
+  main { overflow: hidden; }
+  .section { padding: 26px 16px; }
+  .section-title { text-align: center; }
+  .topline { display: none; }
+  .notice { font-size: 6px; white-space: nowrap; overflow: hidden; }
+  .notice span { margin: 0 8px; }
+  nav { height: 54px; padding: 0 12px; }
+  .logo { flex-basis: 83px; font-size: 17px; }
+  .logo small { font-size: 5px; margin-right: 21px; }
+  .tools { gap: 6px; }
+  .cart { padding: 0 8px; }
+  .navlinks { right: 8px; left: 8px; }
+  .nav-backdrop { inset: 74px 0 0; }
+
+  .hero { min-height: 0; }
+  .hero-inner { padding: 26px 16px 32px; flex-direction: column; text-align: center; }
+  .hero-copy { width: 100%; }
+  .hero-photo { order: -1; width: min(360px, 100%); }
+  .hero-photo img { height: clamp(165px, 55vw, 210px); }
+  .stats, .hero-actions { justify-content: center; flex-wrap: wrap; }
+  .hero-actions button { min-height: 40px; }
+
+  .products-hero { padding: 24px 16px 18px; }
+  .products-hero__inner { display: flex; flex-direction: column; text-align: center; }
+  .products-hero__text { text-align: center; }
+  .products-hero__text h1 { font-size: 19px; line-height: 1.5; }
+  .products-hero__facts { width: 100%; justify-content: center; margin-top: 4px; }
+  .products-hero__facts div { flex: 1; max-width: 118px; min-width: 0; }
+  .products-search { height: auto; min-height: 44px; padding: 7px 10px; margin-top: 15px; }
+  .products-search input { font-size: 10px; }
+  .products-search button { display: none; }
+
+  /* Product grid: change this 2 to adjust mobile product columns. */
+  .catalog__grid, .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .catalog { padding: 16px 12px 28px; }
+  .catalog__categories { margin-inline: -2px; padding-bottom: 14px; }
+  .catalog__categories button { padding: 7px 14px; }
+  .listing-card__image { height: clamp(130px, 38vw, 175px); }
+  .listing-card__body { padding: 0 10px 11px; }
+  .listing-card h2 { font-size: 11px; line-height: 1.55; }
+  .listing-card p { font-size: 7px; line-height: 1.6; }
+  .listing-card__buy { align-items: stretch; flex-direction: column; gap: 7px; margin-top: 8px; padding-top: 8px; }
+  .listing-card__buy>b { font-size: 15px; }
+  .listing-card__buy div { width: 100%; }
+  .listing-card__buy .listing-card__add { flex: 1; padding-inline: 5px; }
+  .listing-card__buy button { min-width: 21px; }
+  .listing-card__temp { margin-right: 6px; }
+  .product-card { padding: 6px; }
+  .product-image { height: clamp(120px, 36vw, 155px); }
+  .product-info h3 { font-size: 10px; line-height: 1.5; }
+  .product-info>div { align-items: center; gap: 5px; }
+  .product-info button { padding: 6px; font-size: 7px; }
+  .product-info b { font-size: 13px; }
+
+  .offer-grid aside { grid-template-columns: 1fr; }
+  .bundle { grid-template-columns: 1fr; padding: 10px; gap: 12px; }
+  .bundle-img img { height: 180px; }
+  .bundle-bottom { flex-wrap: wrap; }
+  .bundle-bottom button { flex: 1; min-height: 38px; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .cert-grid, .branch-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+
+  .about-hero { padding: 25px 16px; }
+  .about-hero__inner { gap: 20px; }
+  .about-hero__image { height: 190px; }
+  .about-values, .production { padding: 30px 16px; }
+  .about-values__grid, .production__grid { grid-template-columns: 1fr; }
+  .certificates { max-width: none; margin: 28px 16px; padding: 24px 12px; }
+  .certificates__grid { gap: 8px; }
+  .certificates article { padding: 11px; }
+  .catalog-quality { padding: 36px 16px; }
+  .catalog-quality__grid { grid-template-columns: 1fr; gap: 12px; }
+
+  .quality-section { padding: 29px 16px 0; }
+  .quality-section>header { text-align: center; }
+  .quality-section h2 { font-size: 17px; }
+  .quality-subnav { justify-content: flex-start; overflow-x: auto; gap: 18px; padding-inline: 16px; white-space: nowrap; }
+  .quality-numbers { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 14px; }
+  .procedure-grid, .certificate-grid, .detail-grid, .commitment-grid { grid-template-columns: 1fr; }
+  .quality-statbar, .quality-strip { flex-direction: column; align-items: center; gap: 7px; }
+  .quality-cta { margin: 28px 16px 0; padding: 22px 14px; }
+  .quality-cta h2 { font-size: 15px; }
+
+  .contact-banner { padding: 28px 16px; }
+  .contact-banner__card { padding: 22px 16px; }
+  .contact-banner__actions { flex-direction: column; }
+  .contact-banner__actions button { width: 100%; min-height: 40px; }
+  .footer-content { grid-template-columns: 1fr 1fr; gap: 16px; padding: 26px 16px; }
+  .footer-content .brand { grid-column: span 2; text-align: center; }
+  .copyright { padding-inline: 16px; }
+  .checkout { padding: 26px 16px 36px; }
+  .checkout__heading { align-items: flex-start; }
+  .checkout__heading h1 { font-size: 20px; }
+  .checkout__layout { grid-template-columns: 1fr; }
+  .order-summary { position:static; }
+  .checkout-card, .order-summary { padding: 18px 14px; }
+  .checkout-fields--two { grid-template-columns: 1fr; }
+  .checkout-fields__full { grid-column:auto; }
+  .contact-hero { min-height: 0; padding: 26px 16px; flex-direction: column; text-align: center; gap: 20px; }
+  .contact-hero__branch { order: 2; width: min(300px, 100%); }
+  .contact-hero__copy { text-align: center; }
+  .contact-hero h1 { font-size: 22px; }
+  .contact-hero__copy div { justify-content: center; flex-wrap: wrap; }
+  .contact-channels { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .contact-channels article { padding: 11px 9px; }
+  .contact-channels h3 { font-size: 9px; }
+  .contact-channels b { font-size: 8px; }
+  .contact-request { grid-template-columns: 1fr; gap: 14px; }
+  .contact-request aside { grid-template-columns: 1fr; }
+  .contact-form { padding: 20px 14px; }
+  .contact-form__fields { grid-template-columns: 1fr; }
+  .contact-form__wide { grid-column: auto; }
+  .branches-section { padding: 30px 16px; }
+  .branches-section header { text-align: center; }
+  .branches-grid { grid-template-columns: 1fr; }
+  .branch-card--featured { grid-column: auto; }
+  .map-section { margin: 18px 16px; padding: 13px; grid-template-columns: 1fr; gap: 20px; }
+  .map-placeholder { height: 200px; }
+  .map-copy { text-align: center; }
+  .contact-cta { margin: 0 16px 28px; padding: 20px 14px; flex-direction: column; text-align: center; }
+  .contact-cta>div+div { flex-wrap: wrap; justify-content: center; }
+}
+
+/* Very small mobile screens only. */
+@media (max-width: 359px) {
+  /* Keep product cards in two columns, even at 320px. */
+  .catalog__grid, .products-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .cert-grid { grid-template-columns: 1fr; }
+  .listing-card__image { height: 185px; }
+  .products-hero__facts { gap: 4px; }
+  .products-hero__facts div { padding-inline: 2px; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions button { width: 100%; }
+}

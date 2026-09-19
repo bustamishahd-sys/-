@@ -1,0 +1,2 @@
+/* Keep the page content and the footer as separate blocks in normal document flow. */
+main{display:flow-root;min-height:0;overflow:visible}

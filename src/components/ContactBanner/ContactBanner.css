@@ -1,0 +1,4 @@
+.contact-banner{background:#003f27;padding:48px clamp(16px,2.5vw,40px)}
+.contact-banner__card{min-height:176px;padding:30px 40px;background:#095b38;border-radius:7px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.contact-banner__card span{color:#f0bd31;font-size:8px}.contact-banner__card h2{color:#fff;font-size:17px;margin:3px 0}.contact-banner__card p{color:#d2e8d8;font-size:8px;margin:0}.contact-banner__actions{display:flex;gap:9px;flex-shrink:0}.contact-banner__actions button{background:#b77a00;color:#fff;border-radius:20px;padding:10px 18px;font-size:9px}.contact-banner__actions button+button{background:#fff;color:#064328}
+@media(max-width:700px){.contact-banner{padding:28px 16px}.contact-banner__card{min-height:0;display:block;padding:24px 18px;text-align:center}.contact-banner__card h2{font-size:14px}.contact-banner__actions{justify-content:center;margin-top:12px}.contact-banner__actions button{padding:8px 10px}}
