@@ -1,2 +1,146 @@
-/* Desktop navigation. Mobile and tablet overrides live in src/responsive.css. */
-header{position:relative;z-index:20;background:#004e2c;color:#fff}.notice{height:20px;background:#003e24;text-align:center;font-size:8px;line-height:20px;color:#d9efd8}.notice span{margin:0 25px;color:#daae35}nav{height:62px;max-width:1180px;margin:auto;display:flex;align-items:center;gap:27px;padding:0 22px}.logo{flex:0 0 100px;color:#f7c13b;line-height:16px;font-size:20px;font-weight:900;position:relative}.logo:before{content:'✦';font-size:21px;margin-left:5px}.logo small{display:block;font-size:6px;color:#fff;margin-right:27px}.navlinks{display:flex;align-items:center;gap:25px;font-size:11px;font-weight:700;flex:1}.navlinks a:hover{color:#f6bf33}.tools{display:flex;align-items:center;gap:14px;direction:ltr}.search{width:165px;height:30px;border-radius:20px;background:#fff;color:#789080;font-size:9px;text-align:right;padding:0 13px}.search:first-letter{font-size:18px}.cart{display:inline-flex;align-items:center;background:#b57900;color:#fff;border-radius:20px;height:30px;padding:0 10px;font-size:9px;position:relative}.cart em{position:absolute;top:-4px;left:10px;font-size:7px;border-radius:8px;background:#eafadd;color:#004e2c;font-style:normal;padding:1px 4px}.hamb,.nav-backdrop{display:none}
+/* =========================
+   Desktop Navigation
+   Mobile and tablet overrides
+   live in src/responsive.css.
+========================= */
+
+header {
+  position: relative;
+  z-index: 20;
+  background: #004e2c;
+  color: #fff;
+}
+
+/* =========================
+   Notice Bar
+========================= */
+
+.notice {
+  height: 20px;
+  background: #003e24;
+  text-align: center;
+  font-size: 8px;
+  line-height: 20px;
+  color: #d9efd8;
+}
+
+.notice span {
+  margin: 0 25px;
+  color: #daae35;
+}
+
+/* =========================
+   Navigation
+========================= */
+
+nav {
+  height: 62px;
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  padding: 0 22px;
+}
+
+/* =========================
+   Logo
+========================= */
+
+.logo {
+  flex: 0 0 100px;
+  color: #f7c13b;
+  line-height: 16px;
+  font-size: 20px;
+  font-weight: 900;
+  position: relative;
+}
+
+.logo:before {
+  content: '✦';
+  font-size: 21px;
+  margin-left: 5px;
+}
+
+.logo small {
+  display: block;
+  font-size: 6px;
+  color: #fff;
+  margin-right: 27px;
+}
+
+/* =========================
+   Navigation Links
+========================= */
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 11px;
+  font-weight: 700;
+  flex: 1;
+}
+
+.navlinks a:hover {
+  color: #f6bf33;
+}
+
+/* =========================
+   Navigation Tools
+========================= */
+
+.tools {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  direction: ltr;
+}
+
+.search {
+  width: 165px;
+  height: 30px;
+  border-radius: 20px;
+  background: #fff;
+  color: #789080;
+  font-size: 9px;
+  text-align: right;
+  padding: 0 13px;
+}
+
+.search:first-letter {
+  font-size: 18px;
+}
+
+.cart {
+  display: inline-flex;
+  align-items: center;
+  background: #b57900;
+  color: #fff;
+  border-radius: 20px;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 9px;
+  position: relative;
+}
+
+.cart em {
+  position: absolute;
+  top: -4px;
+  left: 10px;
+  font-size: 7px;
+  border-radius: 8px;
+  background: #eafadd;
+  color: #004e2c;
+  font-style: normal;
+  padding: 1px 4px;
+}
+
+/* =========================
+   Mobile Navigation Elements
+========================= */
+
+.hamb,
+.nav-backdrop {
+  display: none;
+}

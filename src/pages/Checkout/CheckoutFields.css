@@ -1,0 +1,26 @@
+/* Keep the label text (including the required marker) on one RTL line. */
+.checkout-fields > label {
+  display: block;
+  min-width: 0;
+  direction: rtl;
+  text-align: right;
+}
+
+/* `border-box` prevents a 100%-wide control plus padding from exceeding its grid column. */
+.checkout-fields > label > input,
+.checkout-fields > label > select,
+.checkout-fields > label > textarea {
+  box-sizing: border-box;
+  min-width: 0;
+  margin-top: 6px;
+}
+
+.checkout-fields > label > small {
+  margin-top: 4px;
+}
+
+@media (max-width: 700px) {
+  .checkout-fields > label {
+    width: 100%;
+  }
+}

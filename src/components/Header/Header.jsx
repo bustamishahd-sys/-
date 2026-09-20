@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../../context/CartContext';
 import './Header.css';
+import './AdminPortalLink.css';
 
 export default function Header() {
   const { itemCount, subtotal } = useCart();
@@ -23,6 +24,7 @@ export default function Header() {
       <div className={`navlinks ${open ? 'show' : ''}`}>
         <Link to="/" onClick={close}>الرئيسية</Link><Link to="/products" onClick={close}>منتجاتنا</Link><Link to="/about" onClick={close}>عن عزيزا</Link><Link to="/quality" onClick={close}>الجودة</Link><Link to="/contact" onClick={close}>تواصل معنا | فروعنا</Link>
       </div>
+      <Link className="admin-portal-link" to="/login" onClick={close}>Login</Link>
       <div className="tools"><button className="search" type="button" aria-label="ابحث عن منتج">⌕ <span>ابحث عن منتج...</span></button><Link className="cart" to="/checkout" aria-label="السلة">🛒 <em>{itemCount}</em><span>{subtotal.toFixed(2)} ₪</span></Link></div>
     </nav>
     {open && <button className="nav-backdrop" type="button" aria-label="إغلاق القائمة" onClick={close} />}

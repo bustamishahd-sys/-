@@ -1,1 +1,55 @@
-.about-card{min-height:198px;background:#fff;border-radius:10px;padding:24px;text-align:right}.about-card i{float:left;width:35px;height:35px;display:grid;place-items:center;border-radius:50%;background:#d8f4e0;font-style:normal;font-size:17px}.about-card h2{font-size:15px;margin:33px 0 13px}.about-card div{font-size:9px;color:#5d7467;line-height:2}.about-card small{display:block;margin-top:13px;color:#267852;font-size:8px}@media(max-width:700px){.about-card{min-height:0}.about-card h2{margin-top:25px}}
+/* =========================
+   About Card
+========================= */
+
+.about-card {
+  min-height: 198px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: right;
+}
+
+.about-card i {
+  float: left;
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #d8f4e0;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.about-card h2 {
+  font-size: 15px;
+  margin: 33px 0 13px;
+}
+
+.about-card div {
+  font-size: 9px;
+  color: #5d7467;
+  line-height: 2;
+}
+
+.about-card small {
+  display: block;
+  margin-top: 13px;
+  color: #267852;
+  font-size: 8px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 700px) {
+  .about-card {
+    min-height: 0;
+  }
+
+  .about-card h2 {
+    margin-top: 25px;
+  }
+}

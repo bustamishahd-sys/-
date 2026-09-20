@@ -1,1 +1,447 @@
 .quality-page{background:#e7ffed;padding-bottom:42px}.quality-hero{background:#004b2c;color:#fff;padding:55px clamp(16px,7vw,115px)}.quality-hero__inner{max-width:1140px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:50px}.quality-hero__content{text-align:right;max-width:640px}.quality-hero__content>span{color:#f4be34;font-size:10px}.quality-hero h1{font-size:30px;margin:10px 0}.quality-hero p{font-size:11px;color:#cce6d3}.quality-hero__badges{display:flex;gap:8px;flex-wrap:wrap}.quality-hero__badges b{border:1px solid #458166;border-radius:18px;padding:6px 12px;font-size:8px}.quality-hero__product{background:#fff;border-radius:8px;padding:8px;color:#174e36;width:200px;box-shadow:0 7px 22px #002d1d}.quality-hero__product>b{font-size:8px;background:#00512e;color:#fff;padding:3px 6px;border-radius:9px}.quality-hero__product img{width:100%;height:105px;object-fit:cover;border-radius:5px;margin:6px 0}.quality-hero__product strong,.quality-hero__product small{display:block;font-size:9px}.quality-hero__product div{display:flex;margin-top:7px;background:#dcf8e4}.quality-hero__product span{flex:1;text-align:center;font-size:10px;padding:6px;border-left:1px solid #c5ead0}.quality-hero__product em{font-style:normal;font-size:6px;color:#638273}.quality-subnav{display:flex;justify-content:center;gap:28px;padding:13px;background:#f6fff8;font-size:9px}.quality-subnav a:hover{color:#b77900}.quality-section{max-width:1140px;margin:auto;padding:38px clamp(16px,2.5vw,35px) 0}.quality-section>header{text-align:right;margin-bottom:17px}.quality-section>header span{font-size:8px;color:#337454}.quality-section h2{font-size:21px;margin:3px 0 7px}.quality-section header p{font-size:9px;color:#668173;margin:0}.quality-intro{display:grid;grid-template-columns:300px 1fr;gap:20px;background:#fff;border-radius:8px;padding:10px}.quality-intro>img{width:100%;height:185px;object-fit:cover;border-radius:5px}.quality-intro b{font-size:14px}.quality-intro p{font-size:9px;color:#647f70}.quality-numbers{display:grid;grid-template-columns:repeat(4,1fr);background:#dff9e7;margin-top:22px;border-radius:5px}.quality-numbers span{text-align:center;padding:11px 4px;color:#55786a;font-size:7px}.quality-numbers strong{display:block;color:#034f2c;font-size:13px}.procedure-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.procedure-grid article,.quality-card{background:#fff;border-radius:7px;padding:13px;position:relative}.procedure-grid b{position:absolute;left:10px;top:10px;width:20px;height:20px;text-align:center;background:#00512e;color:#fff;border-radius:50%;font-size:10px;line-height:20px}.procedure-grid i{font-style:normal;color:#b47b00;font-size:20px}.procedure-grid h3,.quality-card h3{font-size:11px;margin:7px 0}.procedure-grid p,.quality-card p{font-size:8px;color:#607c6c;line-height:1.8}.procedure-grid small,.quality-card a{display:block;background:#e1fae8;color:#17613d;text-align:center;border-radius:3px;padding:4px;font-size:7px}.certificate-grid,.detail-grid,.commitment-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.detail-grid{grid-template-columns:1fr 1fr}.commitment-grid{grid-template-columns:repeat(3,1fr)}.quality-card{text-align:right}.quality-card i{display:inline-flex;width:32px;height:32px;align-items:center;justify-content:center;border-radius:50%;background:#dff7e6;color:#08703d;font-style:normal}.quality-statbar,.quality-strip{background:#d5f3de;border-radius:7px;margin-top:13px;padding:14px;display:flex;justify-content:space-around;font-size:9px;color:#185938}.quality-cta{max-width:1100px;margin:38px auto 0;background:#004b2c;color:#fff;border-radius:6px;text-align:center;padding:28px}.quality-cta h2{font-size:17px;margin:0}.quality-cta p{font-size:9px;color:#cde7d4}.quality-cta button{border-radius:18px;padding:8px 19px;margin:5px;background:#f2c23b;color:#064328;font-size:9px}.quality-cta button+button{background:#fff}@media(max-width:800px){.quality-hero__inner{flex-direction:column}.quality-hero__content{text-align:center}.quality-hero__badges{justify-content:center}.quality-intro{grid-template-columns:1fr}.procedure-grid,.certificate-grid{grid-template-columns:repeat(2,1fr)}.quality-subnav{overflow:auto;justify-content:flex-start;white-space:nowrap}.quality-numbers{grid-template-columns:repeat(2,1fr)}}@media(max-width:480px){.quality-hero h1{font-size:22px}.quality-section{padding-top:28px}.quality-section h2{font-size:17px}.procedure-grid,.certificate-grid,.detail-grid,.commitment-grid{grid-template-columns:1fr}.quality-statbar,.quality-strip{flex-direction:column;gap:8px}.quality-cta{margin:28px 16px 0}}
+/* =========================
+   Quality Page
+========================= */
+
+.quality-page {
+  background: #e7ffed;
+  padding-bottom: 42px;
+}
+
+/* =========================
+   Quality Hero
+========================= */
+
+.quality-hero {
+  background: #004b2c;
+  color: #fff;
+  padding: 55px clamp(16px, 7vw, 115px);
+}
+
+.quality-hero__inner {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* Hero Content */
+
+.quality-hero__content {
+  text-align: right;
+  max-width: 640px;
+}
+
+.quality-hero__content > span {
+  color: #f4be34;
+  font-size: 10px;
+}
+
+.quality-hero h1 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.quality-hero p {
+  font-size: 11px;
+  color: #cce6d3;
+}
+
+/* Hero Badges */
+
+.quality-hero__badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.quality-hero__badges b {
+  border: 1px solid #458166;
+  border-radius: 18px;
+  padding: 6px 12px;
+  font-size: 8px;
+}
+
+/* Hero Product */
+
+.quality-hero__product {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  color: #174e36;
+  width: 200px;
+  box-shadow: 0 7px 22px #002d1d;
+}
+
+.quality-hero__product > b {
+  font-size: 8px;
+  background: #00512e;
+  color: #fff;
+  padding: 3px 6px;
+  border-radius: 9px;
+}
+
+.quality-hero__product img {
+  width: 100%;
+  height: 105px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 6px 0;
+}
+
+.quality-hero__product strong,
+.quality-hero__product small {
+  display: block;
+  font-size: 9px;
+}
+
+.quality-hero__product div {
+  display: flex;
+  margin-top: 7px;
+  background: #dcf8e4;
+}
+
+.quality-hero__product span {
+  flex: 1;
+  text-align: center;
+  font-size: 10px;
+  padding: 6px;
+  border-left: 1px solid #c5ead0;
+}
+
+.quality-hero__product em {
+  font-style: normal;
+  font-size: 6px;
+  color: #638273;
+}
+
+/* =========================
+   Quality Sub Navigation
+========================= */
+
+.quality-subnav {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding: 13px;
+  background: #f6fff8;
+  font-size: 9px;
+}
+
+.quality-subnav a:hover {
+  color: #b77900;
+}
+
+/* =========================
+   Quality Sections
+========================= */
+
+.quality-section {
+  max-width: 1140px;
+  margin: auto;
+  padding: 38px clamp(16px, 2.5vw, 35px) 0;
+}
+
+.quality-section > header {
+  text-align: right;
+  margin-bottom: 17px;
+}
+
+.quality-section > header span {
+  font-size: 8px;
+  color: #337454;
+}
+
+.quality-section h2 {
+  font-size: 21px;
+  margin: 3px 0 7px;
+}
+
+.quality-section header p {
+  font-size: 9px;
+  color: #668173;
+  margin: 0;
+}
+
+/* =========================
+   Quality Intro
+========================= */
+
+.quality-intro {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.quality-intro > img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.quality-intro b {
+  font-size: 14px;
+}
+
+.quality-intro p {
+  font-size: 9px;
+  color: #647f70;
+}
+
+/* =========================
+   Quality Numbers
+========================= */
+
+.quality-numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #dff9e7;
+  margin-top: 22px;
+  border-radius: 5px;
+}
+
+.quality-numbers span {
+  text-align: center;
+  padding: 11px 4px;
+  color: #55786a;
+  font-size: 7px;
+}
+
+.quality-numbers strong {
+  display: block;
+  color: #034f2c;
+  font-size: 13px;
+}
+
+/* =========================
+   Procedures
+========================= */
+
+.procedure-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.procedure-grid article,
+.quality-card {
+  background: #fff;
+  border-radius: 7px;
+  padding: 13px;
+  position: relative;
+}
+
+.procedure-grid b {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: #00512e;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.procedure-grid i {
+  font-style: normal;
+  color: #b47b00;
+  font-size: 20px;
+}
+
+.procedure-grid h3,
+.quality-card h3 {
+  font-size: 11px;
+  margin: 7px 0;
+}
+
+.procedure-grid p,
+.quality-card p {
+  font-size: 8px;
+  color: #607c6c;
+  line-height: 1.8;
+}
+
+.procedure-grid small,
+.quality-card a {
+  display: block;
+  background: #e1fae8;
+  color: #17613d;
+  text-align: center;
+  border-radius: 3px;
+  padding: 4px;
+  font-size: 7px;
+}
+
+/* =========================
+   Grids
+========================= */
+
+.certificate-grid,
+.detail-grid,
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.detail-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.commitment-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* =========================
+   Quality Card
+========================= */
+
+.quality-card {
+  text-align: right;
+}
+
+.quality-card i {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #dff7e6;
+  color: #08703d;
+  font-style: normal;
+}
+
+/* =========================
+   Quality Stats / Strip
+========================= */
+
+.quality-statbar,
+.quality-strip {
+  background: #d5f3de;
+  border-radius: 7px;
+  margin-top: 13px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 9px;
+  color: #185938;
+}
+
+/* =========================
+   Quality CTA
+========================= */
+
+.quality-cta {
+  max-width: 1100px;
+  margin: 38px auto 0;
+  background: #004b2c;
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  padding: 28px;
+}
+
+.quality-cta h2 {
+  font-size: 17px;
+  margin: 0;
+}
+
+.quality-cta p {
+  font-size: 9px;
+  color: #cde7d4;
+}
+
+.quality-cta button {
+  border-radius: 18px;
+  padding: 8px 19px;
+  margin: 5px;
+  background: #f2c23b;
+  color: #064328;
+  font-size: 9px;
+}
+
+.quality-cta button + button {
+  background: #fff;
+}
+
+/* =========================
+   Responsive - Tablet
+========================= */
+
+@media (max-width: 800px) {
+  .quality-hero__inner {
+    flex-direction: column;
+  }
+
+  .quality-hero__content {
+    text-align: center;
+  }
+
+  .quality-hero__badges {
+    justify-content: center;
+  }
+
+  .quality-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .procedure-grid,
+  .certificate-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quality-subnav {
+    overflow: auto;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+
+  .quality-numbers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   Responsive - Mobile
+========================= */
+
+@media (max-width: 480px) {
+  .quality-hero h1 {
+    font-size: 22px;
+  }
+
+  .quality-section {
+    padding-top: 28px;
+  }
+
+  .quality-section h2 {
+    font-size: 17px;
+  }
+
+  .procedure-grid,
+  .certificate-grid,
+  .detail-grid,
+  .commitment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quality-statbar,
+  .quality-strip {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .quality-cta {
+    margin: 28px 16px 0;
+  }
+}
