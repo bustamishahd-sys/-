@@ -1,0 +1,9 @@
+/* Keep every admin navigation rail anchored to the top of the viewport. */
+.admin aside,
+.ao-sidebar,
+.ap-sidebar,
+.ab-side {
+  align-content: start;
+  align-items: stretch;
+  justify-content: flex-start;
+}
